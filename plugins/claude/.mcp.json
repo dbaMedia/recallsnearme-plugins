@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "recallsnearme": {
+      "type": "http",
+      "url": "https://recallsnearme.com/mcp",
+      "oauth": {
+        "clientId": "recallsnearme-claude-code",
+        "callbackPort": 8788
+      }
+    }
+  }
+}

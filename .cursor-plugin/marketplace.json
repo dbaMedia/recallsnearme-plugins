@@ -1,0 +1,13 @@
+{
+  "name": "recallsnearme-plugins",
+  "description": "Official RecallsNearMe clients for VIN recalls, shared credits and verified updates.",
+  "owner": {
+    "name": "RecallsNearMe"
+  },
+  "plugins": [
+    {
+      "name": "recallsnearme",
+      "source": "./plugins/cursor"
+    }
+  ]
+}

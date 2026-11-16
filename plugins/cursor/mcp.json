@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "recallsnearme": {
+      "url": "https://recallsnearme.com/mcp",
+      "auth": {
+        "CLIENT_ID": "recallsnearme-cursor",
+        "scopes": [
+          "account:read",
+          "vin:read",
+          "vin:run",
+          "audits:read",
+          "audits:manage",
+          "events:read",
+          "monitoring:manage"
+        ]
+      }
+    }
+  }
+}

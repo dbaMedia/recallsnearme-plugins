@@ -10,7 +10,7 @@ Open Customize > Plugins > Add > From GitHub Repository and enter dbaMedia/recal
 
 ## Claude Code
 
-Run /plugin install recallsnearme --marketplace dbaMedia/recallsnearme-plugins, then authenticate the MCP server. The native package is in plugins/claude.
+Run `claude plugin marketplace add dbaMedia/recallsnearme-plugins`, then `claude plugin install recallsnearme@recallsnearme-plugins`. In Claude Code, use `/mcp` to authenticate the server. The native package is in plugins/claude.
 
 ## ChatGPT and Codex
 

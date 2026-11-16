@@ -1,6 +1,6 @@
 # RecallsNearMe plugins
 
-Version 1.3.0. Live QA release; marketplace approval is separate.
+Version 1.3.1. Live QA release; marketplace approval is separate.
 
 This repository contains only the MIT-licensed client packages. The hosted application and backend are private.
 
@@ -14,7 +14,7 @@ Run /plugin install recallsnearme --marketplace dbaMedia/recallsnearme-plugins, 
 
 ## ChatGPT and Codex
 
-The OpenAI package is in plugins/openai. Public directory availability requires OpenAI review. For developer-mode QA, add https://recallsnearme.com/mcp with OAuth public client ID recallsnearme-openai and the callback registered for the QA app.
+The OpenAI package is in plugins/openai. Public directory availability requires OpenAI review. For developer-mode QA, add https://recallsnearme.com/mcp with OAuth and Dynamic Client Registration (DCR). You do not need a client ID or secret.
 
 ## New-user QA
 

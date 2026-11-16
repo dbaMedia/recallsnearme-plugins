@@ -9,9 +9,7 @@
           "auth": {
             "type": "oauth",
             "client": {
-              "mode": "provided",
-              "clientId": "recallsnearme-openai",
-              "tokenEndpointAuthMethod": "none"
+              "mode": "dcr"
             },
             "baseScopes": [
               "account:read",

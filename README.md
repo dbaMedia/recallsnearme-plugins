@@ -1,6 +1,6 @@
 # RecallsNearMe plugins
 
-Version 1.3.1. Live QA release; marketplace approval is separate.
+Version 1.3.2. Live QA release; marketplace approval is separate.
 
 This repository contains only the MIT-licensed client packages. The hosted application and backend are private.
 
@@ -20,7 +20,7 @@ The OpenAI package is in plugins/openai. Public directory availability requires 
 
 1. Install and connect from a clean host session.
 2. Create a new RecallsNearMe account on the website, then approve the connection. Eligible accounts receive five VIN trial credits once.
-3. Preview a VIN for free and explicitly approve at most one credit. Read the saved result for free.
+3. Preview a VIN for free and explicitly approve at most one credit. Also attach examples/review-preview.csv or paste its VIN column; both should preview one unique valid VIN, one duplicate and one invalid row, costing at most one credit. Read the saved result for free. Chat batches accept up to 1,000 rows and 256 KB CSV. The host must expose the attachment text; unreadable or oversized files must never be silently truncated.
 4. After all five trial credits are used, a new run must be blocked. Reconnecting must not grant another trial.
 5. Open the RecallsNearMe workspace, choose an API plan under Plans & billing, and review Stripe checkout. Complete payment only with account-owner approval. A checkout return alone never grants credits.
 6. After the signed paid invoice is processed, read the funded balance from the same connected assistant and explicitly approve the next run.

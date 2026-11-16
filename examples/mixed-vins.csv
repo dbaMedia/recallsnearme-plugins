@@ -1,0 +1,5 @@
+Stock,VIN,Note
+1,1HGCM82633A004352,"Quoted, note"
+2,1M8GDM9AXKP042788,Second VIN
+3,1hgcm82633a004352,Duplicate
+4,invalid,Invalid input

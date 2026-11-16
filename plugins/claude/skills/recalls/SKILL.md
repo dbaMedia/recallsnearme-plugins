@@ -8,9 +8,9 @@ browser cookie, or payment information in conversation.
 
 1. Read account status when identity, funding mode or available credits matter.
 2. For a single VIN or several pasted VINs, send the entire list to one
-   vin_preview call using vins. For a CSV attachment or pasted CSV, read the
+   vin_check call using vins. For a CSV attachment or pasted CSV, read the
    complete file using the host's attachment capability, then pass its exact
-   text as csv to vin_preview. Use exactly one input form; do not turn a CSV
+   text as csv to vin_check. Use exactly one input form; do not turn a CSV
    header into a VIN or drop, repair, truncate, or reorder rows. The server
    validates the VIN column, duplicates and maximum cost. CSV accepts VIN,
    VIN Number or Vehicle Identification Number headers, or the first column
@@ -20,10 +20,13 @@ browser cookie, or payment information in conversation.
    never claim the file was checked. Chat previews accept at most 1,000 rows
    and 256 KB CSV. For larger inputs, ask for a selected batch or use the
    website bulk upload; never split or truncate and start spending silently.
-   Summarize total rows, valid unique VINs, duplicates, invalid rows, maximum
-   credit cost and available credits before asking for approval. Start only after the user has
-   explicitly authorized that scope and credit use. Preserve returned run IDs
-   and reuse the same idempotency key for the same attempted operation.
+   An explicit request to check the VINs authorizes this one batch using existing
+   credits. Do not ask for a second confirmation or call vin_preview first.
+   Merely attaching a file is not authorization. Use vin_preview only if the
+   user asks for a preview, validation or cost estimate. Do not start a blocked
+   run automatically after funding; wait for a new check request. Reuse the same
+   idempotency key for the same operation. Show the returned compact card and
+   at most one short sentence; never repeat its metrics as bullets or a table.
 3. Report asynchronous work as queued/running until its persisted result proves
    completion. Inspect results before retrying ambiguous work. A request error
    does not establish that nothing happened.
